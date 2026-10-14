@@ -1,0 +1,69 @@
+:root{
+    --bg: #c9ab00;
+    --text: #030202;
+    --mute: #15650ac7;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0%;
+    background: radial-gradient(elipse at 80% 0%, #ffff 0, transparent 38%), var(--bg);
+    color: var(--text);
+    font: 15px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segeo UI", sans-serif;
+    padding: 0 0 env(safe-area-inset-bottom)
+}
+
+button{
+    font: inherit;
+    cursor: pointer;
+}
+
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    padding-top: calc(16px + env(safe-area-inset-top));
+    border-bottom: 1px solid #917900;
+    position: sticky;
+    top: 0;
+    background: #f7d200;
+    backdrop-filter: blur(14px);
+    z-index: 5;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.brand b{
+    color: #008227;
+}
+
+.brand small{
+    display: block;
+    font-size: 9px;
+    letter-spacing: .12em;
+    color: var(--mute);
+    margin-top: 5px;
+}
+
+.logo{
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #c9ab00, #917900);
+    box-shadow: 0 8px 28px #a36400;
+}
