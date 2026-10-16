@@ -10,3 +10,9 @@ function showPage(pageId) {
     menuBtn.setAttribute('aria-expanded','false');
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+
+menuBtn.addEventListener('click',() =>{
+    const open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+})
