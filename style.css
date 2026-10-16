@@ -3,6 +3,7 @@
     --text: #030202;
     --mute: #15650ac7;
     --border: #c64500;
+    --panel2: #ff7c25;
 }
 
 html{
@@ -69,6 +70,15 @@ button{
     box-shadow: 0 8px 28px #a36400;
 }
 
+.menu-btn{
+    border: 1px solid var(--border);
+    background: var(--panel2);
+    color: white;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 20px;
+}
+
 .nav{
     display: none;
     position: sticky;
@@ -99,3 +109,4 @@ button{
     border-color: var(--border);
     color: #fff;
 }
+
