@@ -110,3 +110,9 @@ button{
     color: #fff;
 }
 
+@media(min-width:600px){
+    .nav{
+        grid-template-columns: repeat(6,1fr);
+        top: 74px;
+    }
+}
