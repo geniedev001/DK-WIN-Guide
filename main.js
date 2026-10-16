@@ -1,11 +1,11 @@
 
 const pages = [...document.querySelectorAll('.page')];
 const nav = document.getElementById('nav');
-const menuBtn = document.getElementById('menu-btn');
+const menuBtn = document.getElementById('menuBtn');
 
 function showPage(pageId) {
     pages.forEach(page => page.classList.toggle('active', page.id === pageId));
-    document.querySelectorAll('data-page').forEach(btn => btn.classList.toggle('active', btn.dataset.page === pageId));
+    document.querySelectorAll('[data-page]').forEach(btn => btn.classList.toggle('active', btn.dataset.page === pageId));
     nav.classList.remove('open');
     menuBtn.setAttribute('aria-expanded','false');
     window.scrollTo({top: 0, behavior: 'smooth'});
