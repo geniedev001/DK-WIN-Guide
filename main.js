@@ -11,7 +11,10 @@ function showPage(pageId) {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-
+document.querySelectorAll('[data-page]').forEach(btn => btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    showPage(e.target.dataset.page);
+}));
 menuBtn.addEventListener('click',() =>{
     const open = nav.classList.toggle('open');
     menuBtn.setAttribute('aria-expanded', String(open));
