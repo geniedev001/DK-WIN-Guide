@@ -67,3 +67,11 @@ button{
     background: linear-gradient(145deg, #c9ab00, #917900);
     box-shadow: 0 8px 28px #a36400;
 }
+
+.nav{
+    display: none;
+    position: sticky;
+    top: 74px;
+    z-index: 4;
+    padding: 8px 14px;
+}
