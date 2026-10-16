@@ -2,6 +2,7 @@
     --bg: #c9ab00;
     --text: #030202;
     --mute: #15650ac7;
+    --border: #c64500;
 }
 
 html{
@@ -74,4 +75,27 @@ button{
     top: 74px;
     z-index: 4;
     padding: 8px 14px;
+    background: #824500;
+    border-bottom: 1px solid var(--border);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.nav.open{
+    display: grid;
+}
+
+.nav-link{
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--mute);
+    padding: 9px 5px;
+    border-radius: 1px;
+    font-size: 12px;
+}
+
+.nav-link.active{
+    background: #ffaa41;
+    border-color: var(--border);
+    color: #fff;
 }
