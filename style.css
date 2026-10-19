@@ -236,7 +236,22 @@ button{
     font-weight: 750;
 }
 
+.notice{
+    margin: 22px 0 0;
+    padding: 17px;
+    border-radius: 16px;
+    border: 1px solid #c64500;
+    background: #ffaa41;
+}
 
+.notice b{
+    color: #fff;
+}
+
+.notice p{
+    colod: #fff;
+
+}
 
 @media(min-width:600px){
     .nav{
