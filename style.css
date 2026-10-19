@@ -179,6 +179,21 @@ button{
     font-size: 12px;
 }
 
+.section-tittle{
+    margin: 30px 0 18px;
+}
+
+.section-title h2{
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+}
+
+.section-title p{
+    color: var(--mute);
+    margin: 0;
+}
+
 @media(min-width:600px){
     .nav{
         grid-template-columns: repeat(6,1fr);
