@@ -250,7 +250,7 @@ button{
     background: #ffaa41;
 }
 
-.notice b{
+.noticeb{
     color: #fff;
 }
 
@@ -266,6 +266,43 @@ button{
 
 .content-page p{
     color:#008227;
+}
+
+.step{
+    display: flex;
+    gap: 15px;
+    margin: 13px 0;
+    padding: 17px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background:#a36400;
+}
+
+.step>span{
+    flex: 0 0 35px;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: #824500;
+    color:#000000;
+    font-weight: 850;
+}
+
+.step h3{
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.step p{
+    font-size: 13px;
+    color:var(--mute);
+    margin: 0 0 8px;
+}
+
+.step .primary{
+    margin-bottom: 0;
 }
 
 @media(min-width:600px){
