@@ -249,8 +249,17 @@ button{
 }
 
 .notice p{
-    colod: #fff;
+    color: #fff;
 
+}
+
+.content-page h2{
+    font-size: 19px;
+    margin: 25px 0 6px;
+}
+
+.content-page p{
+    color:#008227;
 }
 
 @media(min-width:600px){
