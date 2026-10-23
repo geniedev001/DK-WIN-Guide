@@ -1,9 +1,10 @@
 :root{
     --bg: #c9ab00;
     --text: #030202;
-    --mute: #15650ac7;
+    --mute: #254f00c7;
     --border: #c64500;
     --panel2: #ff7c25;
+    --subs: #fff;
 }
 
 html{
@@ -85,7 +86,7 @@ button{
     top: 74px;
     z-index: 4;
     padding: 8px 14px;
-    background: #824500;
+    background: #ff9c2a;
     border-bottom: 1px solid var(--border);
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
@@ -102,6 +103,7 @@ button{
     padding: 9px 5px;
     border-radius: 1px;
     font-size: 12px;
+    font-weight: 700;
 }
 
 .nav-link.active{
@@ -250,7 +252,7 @@ button{
     background: #ffaa41;
 }
 
-.noticeb{
+.notice>b{
     color: #fff;
 }
 
@@ -297,7 +299,7 @@ button{
 
 .step p{
     font-size: 13px;
-    color:var(--mute);
+    color:var(--subs);
     margin: 0 0 8px;
 }
 
@@ -305,39 +307,40 @@ button{
     margin-bottom: 0;
 }
 
-.details{
-    padding: 16x 17px;
+
+details {
+    padding: 16px 17px;
     margin: 10px 0;
     border: 1px solid var(--border);
     border-radius: 13px;
-    background: #000000;
+    background: #ffb163
 }
 
-.summary{
+summary {
     font-weight: 750;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.details p{
+details p {
     font-size: 13px;
-    color:var(--mute);
-    margin-bottom: 0;
+    color: var(--mute);
+    margin-bottom: 0
 }
 
-.footer{
+footer{
     border-top: 1px solid #000000;
     background: #ff7c25;
     padding: 24px 18px calc(22px + env(safe-area-inset-bottom));
     text-align: center;
 }
 
-.footer p{
+footer p{
     font-size: 12px;
     color:#000000;
     margin: 5px 0;
 }
 
-.footer smal{
+footer small{
     font-size: 11px;
     color:#000000;
 }
